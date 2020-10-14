@@ -17,29 +17,33 @@ namespace test2._4
             Console.Write("Ange en veckodags namn. ");
             dag = Console.ReadLine();
             
-            switch (dag)
+            switch (dag.ToLower())
             {
-                case "Måndag":
+                case "måndag":
                     msg = ("dag 1 i veckan");
                     break;
-                case "Tisdag":
+                case "tisdag":
                     msg = ("dag 2 i veckan");
                     break;
-                case "Onsdag":
+                case "onsdag":
                     msg = ("dag 3 i veckan, lillördag!!");
                     break;
-                case "Torsdag":
+                case "torsdag":
                     msg = ("dag 4 i veckan");
                     break;
-                case "Fredag":
+                case "fredag":
                     msg = ("dag 5 i veckan");
                     break;
-                case "Lördag":
+                case "lördag":
                     msg = ("dag 6 i veckan");
                     break;
-                case "Söndag":
+                case "söndag":
                     msg = ("dag 7 i veckan");
                     break;
+                default:
+                    msg = ("retard");
+                    break;
+
             }
             //print
             Console.Write("Du valde {0}, vilket är {1}. ", dag, msg);
